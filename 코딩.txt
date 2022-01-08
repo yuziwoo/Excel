@@ -1,0 +1,243 @@
+스크롤 위치 값에 따른 이벤트
+let elem = document.documentElement;
+let rect = elem.getBoundingClientRect();
+
+document.addEventListener("scroll", () => {
+  console.log(rect);
+})
+
+------------------------------------------------
+
+포폴글귀
+no plug-in 네이티브 퍼블리싱
+ES6, SVG, CANVAS, GIT, 반응형디자인, 웹접근성 에 대한 이해도
+Figma, PSD, ILLUST 웹디를 통해 능숙
+
+앞으로의 목표
+javascript에 대한 깊은 이해도를 틈틈이 쌓기
+6월까지 php 2달, react 2달 / 모바일 언어 2달간 공부하기
+퍼블리셔로써 동적인 구현을 최대한 간단하고, 능숙하게 여러가지 표현해보기
+
+웹디자이너로써의 경험은
+UI/ UX에 대한 이해도와
+웹에이전시 내에서의 협업 과정 그리고 웹에이전시의 전반적인 흐름을 이해하기 최적의 시간이였습니다.
+
+
+------------------------------------------------
+
+favicon generator
+https://www.favicon-generator.org/
+
+
+------------------------------------------------
+
+
+글자 그라디언트
+background-image: conic-gradient(#ec8c86,#d78191,#c1759c,#8eabcb,#7cbddb,#91c6a8,#b4d48d,#dfc17e,#ec8c86);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+------------------------------------------------
+
+스크롤 이벤트 막기
+  <body onmousewheel="stopDefAction(event);" onscroll="stopDefAction(event);" ontouchmove="stopDefAction(event);">
+
+
+function stopDefAction(evt) {
+  if(!document.body.classList.contains("body_start") && window.scrollY < 200){
+    evt.preventDefault();
+  }
+}
+
+---------------------------------------------------
+
+화면 위치 이동
+window.scrollBy({
+          top: 100,
+          left: 100,
+          behavior: 'instant' /*smooth*/
+        });
+
+---------------------------------------------------
+
+자바스크립트 애니메이션 넣기
+document.getElementById("tunnel").animate([   // keyframes   { transform: 'translateY(0px)' },   { transform: 'translateY(-300px)' } ], {   // timing options   duration: 1000,   iterations: Infinity });
+
+
+----------------------------------------------------
+
+
+웹사이트
+
+figma.com
+
+unsplash.com
+
+noonnu.cc
+
+mycolor.space
+
+gdweb.co.kr
+
+
+-------------------------------------------------
+
+sprite 이미지 애니메이션
+
+figure{
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+        background: url("sprite2.png") 0px 0px no-repeat;
+        animation: sprite 5s infinite steps(59, end);
+      }
+@keyframes sprite {
+        0%{background-position: 0px 0px;}
+        100%{background-position: -5900px 0px;}
+      }
+
+
+------------------------------------------------------
+
+
+텍스트 그라데이션 (예전에보낸거)
+background-image: linear-gradient(
+138deg,#075bc0 0,#459383 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+코닉 그라디언트
+background-image : conic-gradient(#ec8c86,#d78191,#c1759c,#8eabcb,#7cbddb,#91c6a8,#b4d48d,#dfc17e,#ec8c86)
+
+
+----------------------------------------------------
+
+word-break : keep-all 공부해보기
+
+----------------------------------------------------
+
+
+svg stroke animation
+
+header .logo a svg{
+  display: inline-block;
+
+
+  stroke-dasharray: 0 100;
+  animation: dash 5s linear forwards;
+  stroke-linecap: round;
+}
+header .logo a svg path{
+  stroke: pink;
+  stroke-width: 10;
+}
+
+@keyframes dash {
+      to {
+          stroke-dasharray: 100 0;
+      }
+    }
+
+
+------------------------------------------------------------
+
+마우스 div 색상 반전
+
+mix-blend-mode: difference;
+
+----------------------------------------------------------------
+
+
+마우스 div .html
+
+<style media="screen">
+  body{
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 90px;
+    font-weight: bold;
+    color: #268E57;
+  }
+  html, a{
+    cursor: none!important;
+  }
+  .mouse{
+    position: absolute;
+    z-index: 999;
+    pointer-events:none;
+    top: 0px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+  }
+
+  .mouse1{
+    background: grey;
+  }
+
+  .mouse2{
+    transition: all 0.1s;
+    width: 30px;
+    height: 30px;
+    border: 2px solid grey;
+  }
+</style>
+
+<script type="text/javascript">
+  window.addEventListener("DOMContentLoaded", (e) => {
+
+    let mouse1 = document.getElementsByClassName("mouse1")[0];
+    let mouse2 = document.getElementsByClassName("mouse2")[0];
+
+    document.documentElement.addEventListener("mousemove", (e) => {
+      mouse1.style.transform = `translate3d(${e.pageX- 5}px, ${e.pageY- 5}px, 0px)`;
+      mouse2.style.transform = `translate3d(${e.pageX- 17}px, ${e.pageY- 17}px, 0px)`;
+    }, true);
+
+  });
+</script>
+
+
+--------------------------------------------------
+
+
+텍스트에 마우스 위치값 받아서 원만들기
+
+.box3{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: lightgreen;
+  -webkit-text-fill-color: transparent;
+}
+.second{
+  clip-path: circle(13vw at 30% 30%);
+}
+.second .box3{
+  -webkit-text-fill-color: lightgreen;
+}
+
+-------------------------------------------------
+
+svg 하이퍼링크 연결하기
+
+<svg xmlns="http://www.w3.org/2000/svg" height="30" width="200">
+  <a xlink:href="https://www.w3schools.com/graphics/" target="_blank">
+    <text x="0" y="15" fill="red">I love SVG!</text>
+  </a>
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+-------------------------------------------------
+
+css 신기능
+
+https://www.youtube.com/watch?v=lkTpOHv1Ros
+
