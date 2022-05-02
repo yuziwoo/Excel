@@ -1,0 +1,141 @@
+시작 패키지
+
+🔷 설치
+🔹 기본
+1. 크롬 / https://support.google.com/chrome/answer/95346?hl=ko
+ - Go Fullpage 설치하기
+2. 마이크로소프트 오피스 365 / https://www.microsoft.com/ko-kr/microsoft-365
+
+🔹 코딩
+1. Git(깃베쉬 - 마이크로소프트용) / https://git-scm.com/
+2. Atom / https://atom.io/
+3. Sourcetree / https://sourcetreeapp.com/
+4. VScode / https://code.visualstudio.com/Download
+5. Git desktop / https://desktop.github.com/
+6. FileZila / https://filezilla-project.org/
+7. node.js / nodejs.org
+8. 엑셀파일 / https://github.com/yuziwoo/Excel
+9. Jquery / https://jquery.com/download/
+ -> Jquery UI / https://jqueryui.com/download/
+10. React Developer Tools / https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi/related?hl=en
+
+🔹 디자인
+1. Adobe / https://www.adobe.com/kr/products/photoshop/landpa.html
+2. Figma / https://www.figma.com/downloads/
+
+
+🔷 코드편집기 플러그인
+🔹 Atom
+1. ( Packages > Setting view > Install Packages > Themes ) open-html-in-browser 설치 / atom-live-server 설치 > Packages 에서 라이브서버키기 
+2. ( File > Keymap ) 들어간 후
+# 'atom-workspace':
+#  'ctrl-shift-p': 'core:move-up'
+#  'ctrl-p': 'core:move-down'
+
+       ↑이 부분 밑에다가 
+
+'atom-text-editor[data-grammar~="html"]':
+'f12': 'open-html-in-browser:open'
+'.tree-view':
+'shift-o': 'open-html-in-browser:selected-entry'
+를 붙여넣기 하고 Ctrl+S로 저장  ( 앞부분에 #버튼 없어야함)
+
+*Atom 의 상단바가 사라지면 alt키를 누르면 됩니다.
+ 
+🔹 Visual Studio Code
+HTML 기본양식 자동완성 : ! + tab
+LiveServer : Alt + L + O
+설정 : Ctrl + , 
+다양한 단축키보기 : Ctrl + Shift + P
+
+다운로드 받을 패키지
+1. Live Server
+2. Material Theme - 배경 색 어둡게
+3. Material Icon Theme - 아이콘 꾸며
+4. Bracket Pair Colorizer - 괄호의 색깔을 다르게해서 구분이 쉬워짐!! 좋음
+5. Indent-rainbow - 들여쓰기 구분, scope 잘 보임
+6. Auto Rename Tag - 태그 앞에만 바꿔도 뒤 바뀜
+7. HTML CSS Support - CSS에 저장된 class값이런거때문에 html 코딩할때 조금만 입력해도 자동완성가능
+
+🔹 Sourcetree
+Merge Tool / https://www.perforce.com/downloads/visual-merge-tool
+
+
+🔷 즐겨찾기
+🔹 프론트엔드
+1. MDN - https://developer.mozilla.org/ko/docs/Web/API
+2. w3c schools - https://www.w3schools.com/cssref/css_colors.asp
+3. GDWeb - http://www.gdweb.co.kr/sub/list.asp?RetrieveFlag=&Page=1&str_String=%3Fdisplayrow%3D60%26Txt_key%3Dall%26Txt_word%3D%26Txt_agnumber%3D%26Txt_fgbn%3D5%26Txt_bcode1%3D%26Txt_gbflag%3D%26Txt_bcode2%3D%26Txt_bcode3%3D%26Txt_bcode4%3D%26Txt_bcode5%3D%26Page%3D&Txt_word=&Txt_fgbn=5&Txt_bcode1=022710001&Txt_gbflag=&Txt_bcode2=&Txt_bcode3=&Txt_bcode4=&Txt_bcode5=&Txt_agnumber=&str_no=
+4. 닷홈 - https://www.dothome.co.kr/login.php?rt_url=0535c936226acef14fe6f407977f39a84eb8fb6c1d516e34cec8507b4864d349
+5. 내 깃허브 - https://github.com/yuziwoo
+6. 내 포폴 (깃허브) - https://yuziwoo.github.io/portfolio4/
+7. 내 포폴 (닷홈) - http://yuziwoo1.dothome.co.kr/
+8. caniuse - https://caniuse.com/
+9. npm 사이트 - https://www.npmjs.com/
+
+🔹 라이브러리
+1. 제이쿼리 - https://jquery.com/download/
+2. threejs - https://threejs.org/
+3. React - https://reactjs.org/
+4. Type Script - https://www.typescriptlang.org/ko/
+5. Modernizr - https://modernizr.com/download?setclasses
+6. Scroll Trigger - https://github.com/terwanerik/ScrollTrigger
+7. Swiper js - https://swiperjs.com/
+
+🔹 도구
+1. 구글 폰트 - https://fonts.google.com/
+2. 눈누 폰트 - https://noonnu.cc/index
+3. HTML 특수문자 - https://dev.w3.org/html5/html-author/charref
+4. Color Space - https://mycolor.space/?hex=%23FFAF29&sub=1
+5. Favicon-generator - https://www.favicon-generator.org/
+6. Font awsome 아이콘 - https://fontawesome.com/
+7. 더미텍스트 - https://lipsum.com/
+8. HTML 특수문자 2 - https://kr.piliapp.com/symbol/quotation-mark/
+
+🔹 활용하기 좋은 도구
+1. 곡선 svg 만들기 - https://app.haikei.app/
+2. Blob - https://passionhacks.com/blob-maker/?n=1&e=6&gw=6&se=null&c=d1d8e0&o=0
+3. Fancy border Radius - https://9elements.github.io/fancy-border-radius/#57.60.30.30--
+4. Clip Path - https://bennettfeely.com/clippy/
+5. CSS 생성기 - https://css3generator.com/
+6. Px rem 변환기 - http://pxtoem.com/
+7. JS Minify 1 - https://www.uglifyjs.net/
+8. JS Minify 2 - https://www.toptal.com/developers/javascript-minifier/
+
+
+🔹 포털
+구글 - https://www.google.com/
+네이버 - https://www.naver.com/
+인스타그램 - https://www.instagram.com/
+유튜브 - https://www.youtube.com/
+페이스북 - https://www.facebook.com/
+
+🔹 파파고 - https://papago.naver.com/
+🔹 강의 생활코딩 - https://seomal.org/
+🔹 라이브서버 (vs code:5500, Atom:3000 추가하기)
+
+🔹 의류
+1. 무신사 - https://www.musinsa.com/app/
+2. 포터리 - https://ptry.co.kr/category/new-arrivals/81/
+3. COS - https://www.cosstores.com/kr_krw/men/new-arrivals.html?utm_source=naverbs_pc&utm_medium=cpc&utm_campaign=W34_new_season_sub_m&NaPm=ct%3Dkszxo474%7Cci%3D0z40002C1gTvMJcaPLl6%7Ctr%3Dbrnd%7Chk%3D9c488f65944de1a65770b0c17f90b539296b825a
+4. Stussy - https://www.stussy.co.kr/
+5. 드로우핏 - http://draw-fit.com/
+6. Lokward - https://www.lokward.com/index.html
+7. OURSCOPE - https://ourscope.co.kr/
+8. 29cm - https://shop.29cm.co.kr/brand/1708?front_brand_no=1708&count=50&page=1&category_large_code=272100100&category_medium_code=&category_small_code=&sort=latest&is_free_shipping=&is_soldout=&is_discount=
+9. 토마스모어 - https://www.otgerly.com/
+10. 웍스아웃 - https://www.worksout.co.kr/
+11. 르아르 - https://leire.co.kr/
+12. 벤테즈 - https://ventez.co.kr/index.html
+13. STU오피스 - https://stuoffice.com/category/bottoms/42/
+14. 오니츠카타이거 - https://www.onitsukatiger.com/kr/ko-kr/
+15. 애프터프레이 - https://www.afterpray.com/shop
+16. ATON Shoes - http://atonshoes.com/product/list.html?cate_no=77&NaPm=ct%3Dkr6bsqio%7Cci%3Dcheckout%7Ctr%3Dds%7Ctrx%3D%7Chk%3Da66d9373482d0ba19391db91bb931c2222ba48b2
+17. Uping - https://u-ping.co.kr/?n_media=27758&n_query=%EC%9C%A0%ED%95%91&n_rank=1&n_ad_group=grp-a001-01-000000020756162&n_ad=nad-a001-01-000000138681301&n_keyword_id=nkw-a001-01-000003758665422&n_keyword=%EC%9C%A0%ED%95%91&n_campaign_type=1&n_ad_group_type=1&NaPm=ct%3Dkr6cavmw%7Cci%3D0zK0002Tud5uAnoP%2DfjK%7Ctr%3Dsa%7Chk%3D93e5f13c6579b0fae8dc3540c5e61aa3ce71bed5
+18. SoundsLife - https://soundslife.kr/
+19. cord - https://www.the-cord.co.kr/
+20. 토니웩 - https://tonywack.com/product/list.html?cate_no=42
+21. 주앙옴므 - https://lofficiel-juan.kr/
+22. 스왈로 라운지 - https://anotheroffice.co.kr/product/list.html?cate_no=70&n_media=27758&n_query=%EC%96%B4%EB%82%98%EB%8D%94%EC%98%A4%ED%94%BC%EC%8A%A4&n_rank=1&n_ad_group=grp-a001-04-000000021961823&n_ad=nad-a001-04-000000150983074&n_keyword_id=nkw-a001-04-000003804800532&n_keyword=%EC%96%B4%EB%82%98%EB%8D%94%EC%98%A4%ED%94%BC%EC%8A%A4&n_campaign_type=4&n_contract=tct-a001-04-000000000399759&n_ad_group_type=5&NaPm=ct%3Dktpn5i4g%7Cci%3D0yy00030JijvSNI6i1m%2D%7Ctr%3Dbrnd%7Chk%3D2f0c9f0c455c563d98db1fcef761144edd253862
+23. ETC-Seoul - https://etcseoul.com/product/list.html?cate_no=24
+24. 노드 아카이브 - https://nodearchive.com/category/%EC%95%84%EC%9A%B0%ED%84%B0/44/
