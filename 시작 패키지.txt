@@ -22,6 +22,9 @@
 🔹 디자인
 1. Adobe / https://www.adobe.com/kr/products/photoshop/landpa.html
 2. Figma / https://www.figma.com/downloads/
+3. Pixabay
+4. Unsplash.com
+5. Pinterest.com
 
 
 🔷 코드편집기 플러그인
